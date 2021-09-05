@@ -1,0 +1,72 @@
+import { StyleSheet } from "react-native";
+import Colors from "../../utils/Colors";
+import Fonts from "../../utils/Fonts";
+
+export default StyleSheet.create({
+    container:{
+        flex:1,
+        backgroundColor:Colors.appBackgroundColor
+    },
+    profilePicContainer:{
+        height:120,
+        width:120,
+        alignSelf:'center',
+        alignItems:'center',
+        justifyContent:'center',
+        marginTop:30,
+    },
+    profilePlaceholder:{
+        height:100,
+        width:100,
+        borderRadius:50,
+    },
+    editButtonContainer:{
+        height:30,
+        width:30,
+        borderRadius:15,
+        backgroundColor:'blue',
+        position:'absolute',
+        bottom:10,
+        right:10,
+        alignItems:'center',
+        justifyContent:'center',
+        backgroundColor:Colors.themeGreen
+    },
+    editIcon:{
+        height:15,
+        width:15,
+        tintColor:'white'
+    },
+    input:{
+        backgroundColor:'white',
+        width:'90%',
+        height:45,
+        borderRadius:5,
+        borderWidth:1,
+        borderColor:Colors.themeGreen,
+        fontFamily:Fonts.PoppinsRegular,
+        paddingHorizontal:10,
+        alignSelf:'center',
+        marginTop:10
+    },
+    buttonContainer:{
+        flexDirection:'row',
+        width:'90%',
+        alignSelf:'center',
+        justifyContent:'space-between',
+        marginTop:30
+    },
+    logoutButtonContainer:{
+        height:45,
+        width:'15%',
+        borderRadius:5,
+        backgroundColor:Colors.themeGreen,
+        alignItems:'center',
+        justifyContent:'center'
+    },
+    logoutIcon:{
+        height:25,
+        width:25,
+        tintColor:'white'
+    }
+})
